@@ -5,6 +5,7 @@ import { FaUsers } from "react-icons/fa";
 import { AudioList } from "./AudioList";
 
 function MainContainer() {
+  // Effect to handle menu item click events
   useEffect(() => {
     const allLi = document.querySelector(".menuList").querySelectorAll("li");
 
@@ -18,8 +19,10 @@ function MainContainer() {
 
   return (
     <div className="mainContainer">
+      {/* Banner Section */}
       <Banner />
 
+      {/* Menu List Section */}
       <div className="menuList">
         <ul>
           <li>
@@ -39,6 +42,7 @@ function MainContainer() {
           </li>
         </ul>
 
+        {/* Followers Information */}
         <p>
           <i>
             <FaUsers />
@@ -47,6 +51,7 @@ function MainContainer() {
         </p>
       </div>
 
+      {/* Audio List Section */}
       <AudioList />
     </div>
   );
