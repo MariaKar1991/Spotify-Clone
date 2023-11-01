@@ -6,12 +6,12 @@ import { FaEllipsisH, FaHeadphones, FaCheck } from "react-icons/fa";
 function Banner() {
   return (
     <div className="banner">
-      <img src={Artist} alt="" className="bannerImg" />
+      <img src={Artist} alt="Artist" className="bannerImg" />
 
       <div className="content">
-        <div className="breadCrump">
+        <div className="breadCrumb">
           <p>
-            Home <span>/Popular Artist</span>
+            Home <span>/ Popular Artist</span>
           </p>
 
           <i>
@@ -23,7 +23,7 @@ function Banner() {
           <div className="left">
             <div className="name">
               <h2>Nirvana</h2>
-              <img src={Check} alt="" />
+              <img src={Check} alt="Check" />
             </div>
             <p>
               <i>
@@ -50,3 +50,4 @@ function Banner() {
 }
 
 export { Banner };
+
