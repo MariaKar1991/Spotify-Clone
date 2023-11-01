@@ -9,10 +9,10 @@ import { FaBroadcastTower } from "react-icons/fa";
 import { MenuPlayList } from "./MenuPlayList";
 import { TrackList } from "./TrackList";
 
-
 function LeftMenu() {
   return (
     <div className="leftMenu">
+      {/* Logo Section */}
       <div className="logoContainer">
         <i>
           <FaSpotify />
@@ -22,6 +22,8 @@ function LeftMenu() {
           <FaEllipsisH />
         </i>
       </div>
+
+      {/* Search Box */}
       <div className="searchBox">
         <input type="text" placeholder="Search..." />
         <i className="searchIcon">
@@ -29,13 +31,17 @@ function LeftMenu() {
         </i>
       </div>
 
+      {/* Main Menu */}
+      {/* Assuming MenuList is an array of menu items */}
       <Menu title={"Menu"} menuObject={MenuList} />
 
+      {/* Playlist Menu */}
       <MenuPlayList />
 
+      {/* Track List */}
       <TrackList />
     </div>
   );
 }
 
-export { LeftMenu};
+export { LeftMenu };
