@@ -6,6 +6,7 @@ import Profile4 from "../img/profile4.jpeg";
 function RightMenu() {
   return (
     <div className="rightMenu">
+      {/* Go Pro section with crown icon, "Go Pro" text, bell icon, and heart icon */}
       <div className="goPro">
         <i>
           <FaCrown />
@@ -20,6 +21,8 @@ function RightMenu() {
           <FaRegHeart />
         </i>
       </div>
+
+      {/* Profile section with sun icon, settings icon, and user profile image */}
       <div className="profile">
         <i>
           <FaSun />
@@ -28,6 +31,7 @@ function RightMenu() {
           <FaCogs />
         </i>
 
+        {/* User profile image */}
         <div className="profileImage">
           <img src={Profile4} alt="" />
         </div>
